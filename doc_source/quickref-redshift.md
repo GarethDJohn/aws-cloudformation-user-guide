@@ -9,7 +9,7 @@ The following sample template creates an Amazon Redshift cluster according to th
 **Note**  
 The template includes the `IsMultiNodeCluster` condition so that the `NumberOfNodes` parameter is declared only when the `ClusterType` parameter value is set to `multi-node`\.
 
-The example defines the `MysqlRootPassword` parameter with its `NoEcho` property set to `true`\. If you set the `NoEcho` attribute to `true`, CloudFormation returns the parameter value masked as asterisks \(\*\*\*\*\*\) for any calls that describe the stack or stack events, except for information stored in the locations specified below\.
+The example defines the `MasterUserPassword` parameter with its `NoEcho` property set to `true`\. If you set the `NoEcho` attribute to `true`, CloudFormation returns the parameter value masked as asterisks \(\*\*\*\*\*\) for any calls that describe the stack or stack events, except for information stored in the locations specified below\.
 
 **Important**  
 Using the `NoEcho` attribute does not mask any information stored in the following:  
